@@ -11,10 +11,25 @@ cask "scat" do
 
   binary "scat"
 
+  on_macos do
+    on_intel do
+      url "https://github.com/rebaze/scat/releases/download/v#{version}/scat_#{version}_darwin_amd64.tar.gz"
+      sha256 "9aa9e7adb51e29875d6f6c65d4729b191d90bcfeddf3f3835394b2951da9c3cc"
+    end
+    on_arm do
+      url "https://github.com/rebaze/scat/releases/download/v#{version}/scat_#{version}_darwin_arm64.tar.gz"
+      sha256 "b9aa90bcba45919d223da5145d613842a8fdf89a6a4178230cbc8061b3344030"
+    end
+  end
+
   on_linux do
     on_intel do
       url "https://github.com/rebaze/scat/releases/download/v#{version}/scat_#{version}_linux_amd64.tar.gz"
-      sha256 "14e8a711cabf5203b25ebf68817ce80cda199ca1a72453912198527fd8f073a8"
+      sha256 "c7ec814ab7305fc87124e5b54b0777f53812742c55d09e381e5cf9a9b013a21a"
+    end
+    on_arm do
+      url "https://github.com/rebaze/scat/releases/download/v#{version}/scat_#{version}_linux_arm64.tar.gz"
+      sha256 "aa53e744ffaef66160aeac4146978c4083ff1e86e280217ce67eabb6f79a1081"
     end
   end
 
