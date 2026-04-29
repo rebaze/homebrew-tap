@@ -3,7 +3,7 @@ cask "scat" do
   name "scat"
   desc "Software Composition Analysis CLI — SBOM, vulnerability, and license scanning"
   homepage "https://github.com/rebaze/scat"
-  version "0.5.0"
+  version "0.6.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "scat" do
   on_macos do
     on_intel do
       url "https://github.com/rebaze/scat/releases/download/v#{version}/scat_#{version}_darwin_amd64.tar.gz"
-      sha256 "5aa650a23d7fe0eb9bddea8d9e78f31ed73ae03b711059912aba11feb7deceaa"
+      sha256 "54c6865901a7950f8927405b0fe08db8579d96a84de202f081823178cb94c769"
     end
     on_arm do
       url "https://github.com/rebaze/scat/releases/download/v#{version}/scat_#{version}_darwin_arm64.tar.gz"
-      sha256 "00567b159fc0eb51b68c32114cbd93de644644a10598ad4b31f983bb0becdc1b"
+      sha256 "e6a7994386e7ea00b0cece5e4770aea69917bbba24e05917ece9c23c7b85c4af"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/rebaze/scat/releases/download/v#{version}/scat_#{version}_linux_amd64.tar.gz"
-      sha256 "5addce6c8ffff787927218a0bbeca6ec3b5a6d94f426955fd8952cf28b35130d"
+      sha256 "173a25e7e4a881b1a5c3d618a0add69f9775c6a6d83da9b1d91b9c734dc8f247"
     end
     on_arm do
       url "https://github.com/rebaze/scat/releases/download/v#{version}/scat_#{version}_linux_arm64.tar.gz"
-      sha256 "0353931f40bbb3ebc78510137d95f09d2636553cd4cc0576dca24c70cdd86039"
+      sha256 "af551d4cab7f7503459875b8578132bf28924e2efc439a218e79ad9ff9aed3f6"
     end
   end
 
